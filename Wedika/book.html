@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Wedika </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>Wedika</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="book.html">Berikan Penilaian <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a class="cart_link" href="#"></a>
+              <a href="https://wa.me/085217726214" class="order_online" target="_blank">
+                Order Disini
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <!-- book section -->
+<!-- Pastikan untuk menambahkan link Google Fonts di bagian <head> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  <section class="feedback_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Berikan Komentar dan Penilaian Anda</h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="form_container shadow-lg p-5 rounded" style="background-color: #fff; border-radius: 12px;">
+            <form id="feedback-form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="customer_name" id="customer_name" placeholder="Nama Anda" required />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email Anda" required />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="comments" id="comments" rows="5" placeholder="Tulis komentar Anda di sini..." required></textarea>
+              </div>
+              <div class="form-group text-center">
+                <label for="rating" class="text-secondary mb-2" style="font-size: 1.2rem;">Penilaian Anda</label>
+                <div id="rating" class="d-flex justify-content-center align-items-center">
+                  <label class="star" data-value="1">&#9733;</label>
+                  <label class="star" data-value="2">&#9733;</label>
+                  <label class="star" data-value="3">&#9733;</label>
+                  <label class="star" data-value="4">&#9733;</label>
+                  <label class="star" data-value="5">&#9733;</label>
+                </div>
+              </div>
+              <div class="btn_box text-center mt-4">
+                <button type="submit" class="btn w-100 py-3" style="background-color: #FFC107; color: #fff; border-radius: 30px; font-weight: bold;">
+                  Kirim Penilaian
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info_container p-4 bg-light rounded shadow-lg" style="background-color: #f8f9fa;">
+            <h4 class="info_title text-primary mb-4" style="font-size: 1.5rem; font-weight: bold;">Mengapa Penilaian Anda Penting?</h4>
+            <p class="text-secondary" style="font-size: 1.1rem;">Umpan balik Anda sangat berarti bagi kami untuk meningkatkan kualitas layanan dekorasi kami.</p>
+            <p class="mt-3 text-secondary" style="font-size: 1.1rem;">Terima kasih telah menjadi bagian dari kesuksesan kami!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const stars = document.querySelectorAll('.star');
+    const feedbackForm = document.getElementById('feedback-form');
+    let selectedRating = 0;
+  
+    // Menangani klik pada bintang
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const value = star.getAttribute('data-value');
+        selectedRating = value;
+  
+        stars.forEach(s => s.classList.remove('selected'));
+  
+        for (let i = 0; i < value; i++) {
+          stars[i].classList.add('selected');
+        }
+      });
+    });
+  
+    // Menangani pengiriman formulir feedback
+    feedbackForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      // Ambil data dari form
+      const name = document.getElementById('customer_name').value;
+      const email = document.getElementById('email').value;
+      const comments = document.getElementById('comments').value;
+  
+      // Simpan feedback ke dalam LocalStorage
+      const feedbackData = {
+        name: name,
+        email: email,
+        comments: comments,
+        rating: selectedRating
+      };
+  
+      // Ambil data feedback yang sudah ada dari LocalStorage
+      let storedFeedback = JSON.parse(localStorage.getItem('feedbackData')) || [];
+      storedFeedback.push(feedbackData);
+  
+      // Simpan data feedback yang baru di LocalStorage
+      localStorage.setItem('feedbackData', JSON.stringify(storedFeedback));
+  
+      // Reset form dan bintang yang terpilih
+      feedbackForm.reset();
+      stars.forEach(star => star.classList.remove('selected'));
+      selectedRating = 0; // Reset rating yang dipilih
+    });
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #f4f7fa;
+    }
+  
+    .star {
+      font-size: 2.5rem;
+      color: #e4e5e9;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin: 0 8px;
+    }
+  
+    .star:hover {
+      color: #ff6a00;
+      transform: scale(1.2);
+    }
+  
+    .star.selected {
+      color: #ffd700;
+    }
+  
+    .form-control {
+      font-family: 'Raleway', sans-serif;
+      border-radius: 10px;
+      box-shadow: none;
+      font-size: 1.1rem;
+      padding: 12px;
+      border: 1px solid #ccc;
+      transition: all 0.3s;
+    }
+  
+    .form-control:focus {
+      border-color: #ff6a00;
+      box-shadow: 0 0 8px rgba(255, 106, 0, 0.6);
+    }
+  
+    .btn {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background-color: #FFC107;
+    }
+  
+    .btn:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+    }
+  
+    .info_container {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  
+  <!-- end book section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Hubungi Kami
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/place/Jl.+Pagala+Kel+Wawonggole/data=!4m7!3m6!1s0x2d9848968fdc25b1:0x14569292712fc82!8m2!3d-3.8562513!4d122.0625257!16s%2Fg%2F1hm3bv7jk!19sChIJsSXcj5ZImC0RgvwSJylpRQE?authuser=0&hl=id&rclk=1" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Lokasi Kami</span>
+              </a>
+              <a href="https://wa.me/6285217726214" target="_blank">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <span>WhatsApp</span>
+              </a> 
+              <a href="https://www.instagram.com/_israwallll" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span>Instagram</span>
+              </a> 
+              <a href="https://www.facebook.com/Israwal" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span>Facebook</span>
+              </a>                           
+              <a href="mailto:israwal14@example.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Email</span>
+              </a>              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="#" class="footer-logo">
+              Wedika
+            </a>
+            <p>
+              Solusi dekorasi pernikahan Anda. Dengan tim profesional, kami siap mewujudkan momen istimewa yang penuh makna dan tak terlupakan.
+            </p>
+          </div>
+        </div>        
+        <div class="col-md-4 footer-col">
+          <h4>
+            Jam Operasional
+          </h4>
+          <p>
+            Setiap Hari
+          </p>
+          <p>
+            10.00 Pagi - 10.00 Malam
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
